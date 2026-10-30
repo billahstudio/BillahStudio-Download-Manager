@@ -1,11 +1,11 @@
 {
   "name": "billahstudio-download-manager",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A Windows download manager with segmented transfers and browser video capture",
   "main": "desktop/main.cjs",
   "private": true,
-  "repository": { "type": "git", "url": "https://github.com/Ahmadkhattak1/awesome-downloader.git" },
-  "bugs": { "url": "https://github.com/Ahmadkhattak1/awesome-downloader/issues" },
+  "repository": { "type": "git", "url": "https://github.com/billahstudio/BillahStudio-Download-Manager.git" },
+  "bugs": { "url": "https://github.com/billahstudio/BillahStudio-Download-Manager/issues" },
   "author": "BillahStudio",
   "license": "MIT",
   "scripts": {
