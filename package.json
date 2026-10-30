@@ -14,7 +14,9 @@
     "package": "electron-builder --win dir",
     "dist": "electron-builder --win nsis --x64 --publish never",
     "dist:portable": "electron-builder --win portable --x64 --publish never",
-    "build:web": "npm --prefix website install && npm --prefix website run build"
+    "build:web": "npm --prefix website install && npm --prefix website run build",
+    "dev:web": "npm --prefix website run dev",
+    "preview:web": "npm --prefix website run preview"
   },
   "devDependencies": {
     "electron": "44.9.0",
