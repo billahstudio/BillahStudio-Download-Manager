@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Download, CheckCircle, ExternalLink, X, ShieldAlert } from 'lucide-react';
 import { Language } from '../types';
-import { content, OFFICIAL_DOWNLOAD_URL } from '../data/translations';
+import { content } from '../data/translations';
 import { BrandLogo } from './BrandLogo';
 
 interface DownloadModalProps {
@@ -17,7 +17,7 @@ export function DownloadModal({ isOpen, onClose, currentLang }: DownloadModalPro
     if (isOpen) {
       // Trigger the real file download automatically
       const link = document.createElement('a');
-      link.href = OFFICIAL_DOWNLOAD_URL;
+      link.href = '/download';
       link.setAttribute('download', 'BillahStudio-Download-Manager.exe');
       document.body.appendChild(link);
       link.click();
@@ -59,11 +59,11 @@ export function DownloadModal({ isOpen, onClose, currentLang }: DownloadModalPro
 
         {/* Manual download link */}
         <div className="p-3 rounded-xl bg-[#060A12] border border-white/5 mb-5 flex items-center justify-between text-xs">
-          <span className="text-slate-400 truncate max-w-[280px]">
-            {OFFICIAL_DOWNLOAD_URL}
+          <span className="text-slate-300 font-mono-numbers truncate max-w-[280px]">
+            BillahStudio-Download-Manager.exe
           </span>
           <a
-            href={OFFICIAL_DOWNLOAD_URL}
+            href="/download"
             className="text-teal-400 hover:text-teal-300 font-semibold flex items-center gap-1 shrink-0 ml-2"
           >
             <span>Direct Link</span>

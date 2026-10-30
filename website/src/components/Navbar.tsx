@@ -1,7 +1,7 @@
-import { Download, Github, Languages } from 'lucide-react';
+import { Download, Languages } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 import { Language } from '../types';
-import { content, GITHUB_REPO_URL } from '../data/translations';
+import { content } from '../data/translations';
 
 interface NavbarProps {
   currentLang: Language;
@@ -43,7 +43,7 @@ export function Navbar({ currentLang, onToggleLang, onTriggerDownload }: NavbarP
           </a>
         </nav>
 
-        {/* Zone 3: Actions + Language Toggle + GitHub link */}
+        {/* Zone 3: Actions + Language Toggle + Download CTA */}
         <div className="flex items-center gap-3 shrink-0">
           {/* Language Toggle */}
           <button
@@ -55,17 +55,6 @@ export function Navbar({ currentLang, onToggleLang, onTriggerDownload }: NavbarP
             <Languages className="w-3.5 h-3.5 text-teal-400" />
             <span className="font-semibold">{currentLang === 'en' ? 'বাংলা' : 'English'}</span>
           </button>
-
-          {/* GitHub link */}
-          <a
-            href={GITHUB_REPO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-slate-300 hover:text-white px-3 py-2 rounded-lg border border-white/10 hover:border-white/20 hover:bg-white/5 transition-colors"
-          >
-            <Github className="w-3.5 h-3.5" />
-            <span>GitHub</span>
-          </a>
 
           {/* 1 Primary Action */}
           <button

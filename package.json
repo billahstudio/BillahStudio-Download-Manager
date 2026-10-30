@@ -81,6 +81,8 @@
       "target": [{ "target": "nsis", "arch": ["x64"] }],
       "icon": "build/icon.ico",
       "legalTrademarks": "Billah Studio",
+      "legalCopyright": "Copyright © 2026 Billah Studio",
+      "companyName": "Billah Studio",
       "signExecutable": false
     },
     "portable": {

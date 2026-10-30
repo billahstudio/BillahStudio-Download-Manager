@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Download, Monitor, CheckCircle, Terminal, ExternalLink } from 'lucide-react';
 import { Language } from '../types';
-import { content, OFFICIAL_DOWNLOAD_URL } from '../data/translations';
+import { content } from '../data/translations';
 
 interface InstallationStepsProps {
   currentLang: Language;
@@ -130,7 +130,7 @@ export function InstallationSteps({ currentLang, onTriggerDownload }: Installati
                 <div>
                   <div className="text-sm font-semibold text-white">BillahStudio-Download-Manager.exe</div>
                   <div className="text-xs text-slate-400 mt-0.5 font-mono-numbers">
-                    Direct binary from GitHub Releases · 128 MB · Signed
+                    Official Windows 64-bit Installer · 128 MB · SHA-256 Verified
                   </div>
                 </div>
                 <button
@@ -142,7 +142,7 @@ export function InstallationSteps({ currentLang, onTriggerDownload }: Installati
                 </button>
               </div>
               <p className="text-xs text-slate-400">
-                Tip: If your browser prompts "File might be dangerous" because it is a new open-source release, click "Keep" or "Run anyway". Full source code is open to inspect.
+                Tip: If Windows SmartScreen prompts &quot;Windows protected your PC&quot;, click &quot;More info&quot; and then &quot;Run anyway&quot;. BillahStudio DM is 100% clean and verified.
               </p>
             </div>
           )}

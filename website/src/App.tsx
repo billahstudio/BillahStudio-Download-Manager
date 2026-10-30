@@ -14,7 +14,7 @@ import { Footer } from './components/Footer';
 import { DownloadModal } from './components/DownloadModal';
 
 export default function App() {
-  const [currentLang, setCurrentLang] = useState<Language>('bn'); // default to bn or en based on user preference
+  const [currentLang, setCurrentLang] = useState<Language>('en'); // Default to English
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState<boolean>(false);
 
   const handleToggleLang = () => {

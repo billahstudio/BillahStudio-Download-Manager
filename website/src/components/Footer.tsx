@@ -1,6 +1,6 @@
-import { Github, ExternalLink, Shield } from 'lucide-react';
+import { Shield, Mail, Globe, ExternalLink } from 'lucide-react';
 import { Language } from '../types';
-import { content, GITHUB_REPO_URL, GITHUB_RELEASES_URL, GITHUB_LICENSE_URL } from '../data/translations';
+import { content } from '../data/translations';
 import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
@@ -30,7 +30,7 @@ export function Footer({ currentLang }: FooterProps) {
             </p>
             <div className="pt-2 flex items-center gap-2 text-slate-400 text-[11px] font-mono-numbers">
               <Shield className="w-3.5 h-3.5 text-teal-400" />
-              <span>SHA-256 Verified · MIT License</span>
+              <span>SHA-256 Verified · Billah Studio Official</span>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ export function Footer({ currentLang }: FooterProps) {
             </ul>
           </div>
 
-          {/* Resources & Open Source */}
+          {/* Support & Official Links */}
           <div className="space-y-3">
             <div className="font-semibold text-slate-200 text-xs uppercase tracking-wider">
               {t.resources}
@@ -76,43 +76,37 @@ export function Footer({ currentLang }: FooterProps) {
             <ul className="space-y-2">
               <li>
                 <a
-                  href={GITHUB_REPO_URL}
+                  href="https://billahstudio.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 hover:text-white transition-colors"
                 >
-                  <Github className="w-3.5 h-3.5" />
-                  <span>{t.githubRepo}</span>
+                  <Globe className="w-3.5 h-3.5 text-teal-400" />
+                  <span>BillahStudio Official</span>
                 </a>
               </li>
               <li>
                 <a
-                  href={GITHUB_RELEASES_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  href="#installation"
+                  className="flex items-center gap-1.5 hover:text-white transition-colors"
                 >
-                  {t.releaseNotes}
+                  <span>{t.releaseNotes}</span>
                 </a>
               </li>
               <li>
                 <a
-                  href={`${GITHUB_REPO_URL}/issues`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#faq"
                   className="hover:text-white transition-colors"
                 >
-                  {t.reportIssue}
+                  <span>{t.reportIssue}</span>
                 </a>
               </li>
               <li>
                 <a
-                  href={GITHUB_LICENSE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#features"
                   className="hover:text-white transition-colors"
                 >
-                  {t.license}
+                  <span>{t.license}</span>
                 </a>
               </li>
             </ul>
@@ -124,13 +118,9 @@ export function Footer({ currentLang }: FooterProps) {
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div>{t.copyright}</div>
           <div className="flex items-center gap-4">
-            <a href={GITHUB_REPO_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
-              GitHub
-            </a>
+            <span className="text-slate-300">BillahStudio DM</span>
             <span>·</span>
-            <a href={GITHUB_RELEASES_URL} target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
-              v1.0.1 Stable
-            </a>
+            <span className="text-slate-300">v1.0.1 Official</span>
             <span>·</span>
             <a href="https://billahstudio.com" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
               BillahStudio

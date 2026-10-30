@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Download, Copy, Check, FileArchive, ShieldCheck, HardDrive, Cpu, Laptop } from 'lucide-react';
 import { Language } from '../types';
-import { content, OFFICIAL_DOWNLOAD_URL, GITHUB_RELEASES_URL } from '../data/translations';
+import { content } from '../data/translations';
 
 interface DownloadHubProps {
   currentLang: Language;
@@ -112,15 +112,14 @@ export function DownloadHub({ currentLang, onTriggerDownload }: DownloadHubProps
               </div>
             </div>
 
-            <a
-              href={GITHUB_RELEASES_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 px-4 glass-panel hover:bg-white/10 text-white font-medium text-xs rounded-xl border border-white/10 transition-colors flex items-center justify-center gap-2"
+            <button
+              onClick={onTriggerDownload}
+              type="button"
+              className="w-full py-3.5 px-4 glass-panel hover:bg-white/10 text-white font-medium text-xs rounded-xl border border-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               <FileArchive className="w-4 h-4 text-slate-400" />
               <span>Download Portable ZIP</span>
-            </a>
+            </button>
           </div>
 
         </div>

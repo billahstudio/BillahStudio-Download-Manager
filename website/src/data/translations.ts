@@ -7,7 +7,7 @@ export const content = {
       installation: "Installation",
       faq: "FAQ",
       downloadExe: "Download .exe",
-      github: "GitHub",
+      officialSite: "Official Site",
     },
     hero: {
       versionBadge: "Official Release v1.0.1 for Windows 10 & 11",
@@ -109,7 +109,7 @@ export const content = {
       subtitle: "Clean setup with no complicated prerequisites or admin hurdles.",
       step1Num: "01",
       step1Title: "Download Executable",
-      step1Desc: "Grab the standalone Windows installer (BillahStudio-Download-Manager.exe) directly from GitHub releases.",
+      step1Desc: "Download the official standalone Windows installer (BillahStudio-Download-Manager.exe) directly.",
       step2Num: "02",
       step2Title: "Run Setup Wizard",
       step2Desc: "Launch the installer. Desktop shortcuts and optional system startup hooks are created automatically.",
@@ -143,10 +143,10 @@ export const content = {
     footer: {
       brandDesc: "High-performance Windows download acceleration built with modern standards, absolute user privacy, and zero bloatware.",
       quickLinks: "Quick Navigation",
-      resources: "Resources",
-      githubRepo: "GitHub Repository",
-      releaseNotes: "Release Notes & Changelog",
-      reportIssue: "Report an Issue",
+      resources: "Official Links",
+      officialRelease: "Official Release",
+      releaseNotes: "System Requirements",
+      reportIssue: "Help & FAQ",
       license: "MIT License",
       copyright: "© 2026 BillahStudio. Built with passion for speed, privacy, and desktop craft.",
     },
@@ -169,7 +169,7 @@ export const content = {
       installation: "ইনস্টলেশন",
       faq: "প্রশ্নোত্তর",
       downloadExe: "ডাউনলোড .exe",
-      github: "গিটহাব",
+      officialSite: "অফিসিয়াল সাইট",
     },
     hero: {
       versionBadge: "উইন্ডোজ ১০ ও ১১ এর জন্য অফিসিয়াল রিলিজ v1.0.1",
@@ -271,7 +271,7 @@ export const content = {
       subtitle: "কোনো জটিল কনফিগারেশন ছাড়া সরাসরি ব্যবহার উপযোগী।",
       step1Num: "০১",
       step1Title: "ইনস্টলার ডাউনলোড করুন",
-      step1Desc: "অফিসিয়াল গিটহাব রিলিজ থেকে BillahStudio-Download-Manager.exe ফাইলটি নামিয়ে নিন।",
+      step1Desc: "সরাসরি অফিসিয়াল BillahStudio-Download-Manager.exe ফাইলটি নামিয়ে নিন।",
       step2Num: "০২",
       step2Title: "সেটআপ উইজার্ড রান করুন",
       step2Desc: "ফাইলটিতে ডাবল ক্লিক করে নির্দেশনা অনুসরণ করুন। স্বয়ংক্রিয়ভাবে ডেস্কটপ আইকন তৈরি হয়ে যাবে।",
@@ -305,10 +305,10 @@ export const content = {
     footer: {
       brandDesc: "উইন্ডোজের জন্য নির্মিত আধুনিক, নিরাপদ ও সুপারফাস্ট ডাউনলোড অ্যাক্সিলারেটর সফটওয়্যার।",
       quickLinks: "গুরুত্বপূর্ণ লিংক",
-      resources: "রিসোর্স",
-      githubRepo: "গিটহাব রিপোজিটরি",
-      releaseNotes: "রিলিজ নোট ও চেঞ্জলগ",
-      reportIssue: "সমস্যা রিপোর্ট করুন",
+      resources: "অফিসিয়াল লিংক",
+      officialRelease: "অফিসিয়াল রিলিজ",
+      releaseNotes: "সিস্টেম রিকোয়ারমেন্ট",
+      reportIssue: "সাহায্য ও সাপোর্ট",
       license: "MIT লাইসেন্স",
       copyright: "© ২০২৬ BillahStudio. সর্বস্বত্ব সংরক্ষিত।",
     },
@@ -358,8 +358,8 @@ export const FAQ_DATA = [
     category: 'security' as const,
     questionEn: "Is it safe from malware, viruses, and bundled adware?",
     questionBn: "সফটওয়্যারটি কি ভাইরাস, ম্যালওয়্যার বা ক্ষতিকর প্রোগ্রামমুক্ত?",
-    answerEn: "Absolutely. BillahStudio DM is 100% clean with zero adware, zero toolbars, and zero cryptocurrency miners. The communication between the browser extension and the desktop app is strictly locked to local loopback (127.0.0.1) with cryptographic token validation. Full source code is open on GitHub.",
-    answerBn: "একদম নিশ্চিত। এতে কোনো অযাচিত সফটওয়্যার বা বিজ্ঞাপন নেই। ব্রাউজার এক্সটেনশন এবং ডেস্কটপ অ্যাপের যোগাযোগ কেবল লোকাল ১২৭.০.০.১ আইপিতে এনক্রিপ্টেড টোকেনের মাধ্যমে ঘটে। গিটহাবে পুরো সোর্সকোড উন্মুক্ত রয়েছে।"
+    answerEn: "Absolutely. BillahStudio DM is 100% clean with zero adware, zero toolbars, and zero cryptocurrency miners. The communication between the browser extension and the desktop app is strictly locked to local loopback (127.0.0.1) with cryptographic token validation. Every build is verified and secure.",
+    answerBn: "একদম নিশ্চিত। এতে কোনো অযাচিত সফটওয়্যার বা বিজ্ঞাপন নেই। ব্রাউজার এক্সটেনশন এবং ডেস্কটপ অ্যাপের যোগাযোগ কেবল লোকাল ১২৭.০.০.১ আইপিতে এনক্রিপ্টেড টোকেনের মাধ্যমে ঘটে। প্রতিটি রিলিজ সম্পূর্ণ নিরাপদ ও ভেরিফায়েড।"
   },
   {
     category: 'general' as const,
@@ -370,7 +370,4 @@ export const FAQ_DATA = [
   }
 ];
 
-export const OFFICIAL_DOWNLOAD_URL = "https://github.com/billahstudio/BillahStudio-Download-Manager/releases/download/v1.0.1/BillahStudio-Download-Manager.exe";
-export const GITHUB_REPO_URL = "https://github.com/billahstudio/BillahStudio-Download-Manager";
-export const GITHUB_RELEASES_URL = "https://github.com/billahstudio/BillahStudio-Download-Manager/releases";
-export const GITHUB_LICENSE_URL = "https://github.com/billahstudio/BillahStudio-Download-Manager/blob/main/LICENSE";
+export const OFFICIAL_DOWNLOAD_URL = "/download";
