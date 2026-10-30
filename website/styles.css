@@ -667,85 +667,6 @@ body {
   color: var(--teal-primary);
 }
 
-/* Checksum Card */
-.checksum-section {
-  padding: 3rem 0;
-}
-
-.checksum-card {
-  background: linear-gradient(135deg, rgba(18, 26, 43, 0.9), rgba(13, 19, 34, 0.9));
-  border: 1px solid var(--border-color);
-  border-radius: 18px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.checksum-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.checksum-icon {
-  font-size: 2rem;
-}
-
-.checksum-header h3 {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-}
-
-.checksum-header p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.checksum-code-box {
-  background: rgba(5, 8, 15, 0.8);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: 0.85rem 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.code-label {
-  font-size: 0.82rem;
-  color: var(--text-sub);
-  font-weight: 600;
-}
-
-.checksum-code-box code {
-  font-family: monospace;
-  font-size: 0.85rem;
-  color: var(--teal-primary);
-  word-break: break-all;
-}
-
-.copy-btn {
-  background: rgba(45, 212, 191, 0.15);
-  border: 1px solid rgba(45, 212, 191, 0.3);
-  color: var(--teal-primary);
-  padding: 0.45rem 0.85rem;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  transition: var(--transition-smooth);
-}
-
-.copy-btn:hover {
-  background: var(--teal-primary);
-  color: #050b14;
-}
 
 /* FAQ */
 .faq-section {
@@ -895,30 +816,6 @@ body {
   font-size: 0.82rem;
 }
 
-/* Toast */
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: #1e293b;
-  color: var(--teal-primary);
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  font-size: 0.9rem;
-  font-weight: 600;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: var(--transition-smooth);
-  z-index: 1000;
-}
-
-.toast.show {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 /* Responsive */
 @media (max-width: 900px) {
   .hero-title { font-size: 2.8rem; }
@@ -931,5 +828,4 @@ body {
   .nav-links { display: none; }
   .hero-title { font-size: 2.2rem; }
   .primary-download-btn { width: 100%; justify-content: center; }
-  .checksum-code-box { flex-direction: column; align-items: flex-start; }
 }

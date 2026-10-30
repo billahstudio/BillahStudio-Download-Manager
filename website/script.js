@@ -4,37 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const REPO = 'billahstudio/BillahStudio-Download-Manager';
 
   const downloadBtn = document.getElementById('mainDownloadBtn');
-  const copyBtn = document.getElementById('copyChecksumBtn');
-  const checksumText = document.getElementById('checksumVal')?.textContent || '';
-  const toast = document.getElementById('toast');
-
-  // Copy Checksum button
-  if (copyBtn) {
-    copyBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(checksumText.trim());
-        showToast('Checksum copied to clipboard!');
-      } catch (err) {
-        // Fallback for older browsers
-        const textarea = document.createElement('textarea');
-        textarea.value = checksumText.trim();
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        showToast('Checksum copied to clipboard!');
-      }
-    });
-  }
-
-  function showToast(message) {
-    if (!toast) return;
-    toast.textContent = message;
-    toast.classList.add('show');
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 2800);
-  }
 
   // Fetch Latest Release Metadata dynamically from GitHub API
   async function fetchLatestRelease() {
