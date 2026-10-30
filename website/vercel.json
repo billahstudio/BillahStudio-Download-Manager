@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/download",
+      "destination": "https://github.com/billahstudio/BillahStudio-Download-Manager/releases/download/v1.0.1/BillahStudio-Download-Manager.exe"
+    }
+  ]
+}
