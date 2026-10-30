@@ -13,7 +13,8 @@
     "test": "node --test tests/*.test.mjs integration/*.test.cjs extension/*.test.cjs",
     "package": "electron-builder --win dir",
     "dist": "electron-builder --win nsis --x64 --publish never",
-    "dist:portable": "electron-builder --win portable --x64 --publish never"
+    "dist:portable": "electron-builder --win portable --x64 --publish never",
+    "build:web": "npm --prefix website install && npm --prefix website run build"
   },
   "devDependencies": {
     "electron": "44.9.0",

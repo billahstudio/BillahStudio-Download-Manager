@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-outfit: 'Outfit', sans-serif;
+    --font-jakarta: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-jakarta);
+  }
+
+  body {
+    background-color: #090D16;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-outfit);
+}
+
+.font-body {
+  font-family: var(--font-jakarta);
+}
+
+.font-mono-numbers {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle glow and glass styling */
+.glass-panel {
+  background: rgba(14, 23, 38, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(19, 31, 51, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Grid background pattern */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Subtle gradient mesh glow */
+.radial-mesh-top {
+  background: radial-gradient(circle 800px at 50% -20%, rgba(13, 148, 136, 0.18), transparent 70%);
+}
+
+.radial-mesh-hero {
+  background: radial-gradient(circle 600px at 50% 30%, rgba(6, 182, 212, 0.12), transparent 70%);
+}
