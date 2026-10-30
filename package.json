@@ -6,7 +6,7 @@
   "private": true,
   "repository": { "type": "git", "url": "https://github.com/billahstudio/BillahStudio-Download-Manager.git" },
   "bugs": { "url": "https://github.com/billahstudio/BillahStudio-Download-Manager/issues" },
-  "author": "BillahStudio",
+  "author": "Billah Studio",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
@@ -23,6 +23,7 @@
   "build": {
     "appId": "com.billahstudio.downloadmanager",
     "productName": "BillahStudio-Download-Manager",
+    "publisherName": ["Billah Studio"],
     "directories": {
       "output": "release"
     },
@@ -78,6 +79,7 @@
     "win": {
       "target": [{ "target": "nsis", "arch": ["x64"] }],
       "icon": "build/icon.ico",
+      "legalTrademarks": "Billah Studio",
       "signExecutable": false
     },
     "portable": {
