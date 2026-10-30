@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Language } from './types';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { VideoDemo } from './components/VideoDemo';
 import { LiveSimulator } from './components/LiveSimulator';
 import { SpeedBenchmark } from './components/SpeedBenchmark';
 import { BrowserExtensionShowcase } from './components/BrowserExtensionShowcase';
@@ -40,6 +41,9 @@ export default function App() {
           currentLang={currentLang}
           onTriggerDownload={handleTriggerDownload}
         />
+
+        {/* Video Demo Section */}
+        <VideoDemo currentLang={currentLang} />
 
         {/* Live 16-Thread Segmentation Engine Simulator */}
         <LiveSimulator currentLang={currentLang} />

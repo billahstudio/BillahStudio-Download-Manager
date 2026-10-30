@@ -47,6 +47,11 @@ export const content = {
       license: "MIT",
       licenseLabel: "Free & Open-Source Software",
     },
+    videoDemo: {
+      badge: "Product Walkthrough",
+      title: "Watch BillahStudio DM in Action",
+      subtitle: "See how 16-thread multi-segmented acceleration and intelligent browser video sniffing deliver blazing speeds.",
+    },
     features: {
       badge: "Core Architecture",
       title: "Engineered for Raw Desktop Throughput",
@@ -208,6 +213,11 @@ export const content = {
       telemetryLabel: "জিরো অ্যাডওয়্যার ও ট্র্যাকিং",
       license: "MIT",
       licenseLabel: "সম্পূর্ণ ওপেন-সোর্স লাইসেন্স",
+    },
+    videoDemo: {
+      badge: "ভিডিও ডেমো",
+      title: "লাইভ ভিডিওতে দেখুন কীভাবে কাজ করে",
+      subtitle: "১৬টি সমান্তরাল থ্রেডের সর্বোচ্চ ডাউনলোড স্পিড এবং স্বয়ংক্রিয় ব্রাউজার ভিডিও স্নাইপারের বাস্তব ব্যবহার দেখুন।",
     },
     features: {
       badge: "মূল আর্কিটেকচার",
